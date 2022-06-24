@@ -88,11 +88,20 @@
             </MenuItem>
         </Menu>
         <TextBox Grid.ColumnSpan="13" TextWrapping="Wrap" Text="" Margin="13,5,17,10" Grid.Row="1" BorderBrush="White"/>
-        <TextBlock x:Name="Ln1_Col1" Grid.Column="0" Margin="13,394,40,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="Ln1,Col1"/></TextBlock>
-        <TextBlock Grid.Column="5" Margin="13,394,24,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="100%"/></TextBlock>
-        <TextBlock Grid.Column="7" Margin="29,394,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="Windows(CLRF)"/></TextBlock>
-        <TextBlock Grid.Column="10" Margin="10,394,60,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="UTF-8"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Height="20"><Run Text="Ln 1, Col 1"/><LineBreak/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Column="4" Height="20"><Run Language="pt-br" Text="100%"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Column="8" Height="20"><Run Language="pt-br" Text="Windows (CLRF)"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Column="10" Height="20"><Run Language="pt-br" Text="UTF-8"/><LineBreak/><Run/></TextBlock>
 
+
+
+        <Image  
+       Grid.Column="12"
+       Grid.Row="0"
+        Width="20"
+        Height="20"
+        Stretch="Fill"
+        Source="C:\Users\DiverseDev\Desktop\Projetos\Aula16_WPF\Aula16_WPF\3844474-gear-setting-settings-wheel_110345.png"/>
 
 
     </Grid>

@@ -23,9 +23,15 @@ namespace Aula16_WPF
         public MainWindow()
         {
             InitializeComponent();
+         
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
