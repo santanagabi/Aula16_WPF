@@ -1,0 +1,99 @@
+﻿<Window x:Class="Aula16_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aula16_WPF"
+        mc:Ignorable="d"
+        Title="Sem título - Notepad" Height="450" Width="800" Icon="/Icon.jpg">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <!-- Colunas -->
+
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="67*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <!-- Linhas -->
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+
+        </Grid.RowDefinitions>
+        <Menu DockPanel.Dock="Top" Grid.Column="0" Background="White" >
+
+            <MenuItem Header="_Arquivo" Background="White" >
+
+                <MenuItem Header="_Novo" />
+                <MenuItem Header="_Nova Janela" />
+                <MenuItem Header="_Abrir" />
+                <MenuItem Header="_Salvar" />
+                <MenuItem Header="_Salvar como" />
+                <Separator />
+
+                <MenuItem Header="_Configurar página" />
+                <MenuItem Header="_Imprimir" />
+
+                <Separator />
+                <MenuItem Header="_Sair" />
+            </MenuItem>
+        </Menu>
+
+        <Menu DockPanel.Dock="Top"  Grid.Column="1" Background="White" >
+            <MenuItem Header="_Editar" Click="MenuItem_Click" Background="White">
+                <MenuItem Header="_Desfazer" />
+
+                <Separator />
+
+                <MenuItem Header="_Recortar" />
+                <MenuItem Header="_Copiar" />
+                <MenuItem Header="_Colar" />
+                <MenuItem Header="_Excluir" />
+                <Separator />
+                <MenuItem Header="_Buscar com o bing..." />
+                <MenuItem Header="_Localizar..." />
+                <MenuItem Header="_Localizar próxima" />
+                <MenuItem Header="_Localizar Anterior" />
+                <MenuItem Header="_Substituir..." />
+                <MenuItem Header="_Ir para..." />
+                <Separator />
+                <MenuItem Header="_Selecionar tudo" />
+                <MenuItem Header="_Hora/data" />
+
+                <Separator />
+                <MenuItem Header="_Exit" />
+            </MenuItem>
+        </Menu>
+
+
+        <Menu DockPanel.Dock="Top" Grid.Column="2" Background="White">
+            <MenuItem Header="_Exibir" Background="White">
+                <MenuItem Header="_Zoom" />
+                <MenuItem Header="_Barra de Status" />
+                <Separator />
+            </MenuItem>
+        </Menu>
+        <TextBox Grid.ColumnSpan="13" TextWrapping="Wrap" Text="" Margin="13,5,17,10" Grid.Row="1" BorderBrush="White"/>
+        <TextBlock x:Name="Ln1_Col1" Grid.Column="0" Margin="13,394,40,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="Ln1,Col1"/></TextBlock>
+        <TextBlock Grid.Column="5" Margin="13,394,24,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="100%"/></TextBlock>
+        <TextBlock Grid.Column="7" Margin="29,394,10,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="Windows(CLRF)"/></TextBlock>
+        <TextBlock Grid.Column="10" Margin="10,394,60,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.489,4.075" Grid.RowSpan="2" Grid.ColumnSpan="2"><Run Language="pt-br" Text="UTF-8"/></TextBlock>
+
+
+
+    </Grid>
+</Window>
